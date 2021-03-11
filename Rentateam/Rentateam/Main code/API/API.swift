@@ -35,7 +35,7 @@ class API: GETPOST {
                     if let error = error {
                         completion(.failure(error))
                     } else if let data = data {
-                        if urlStr.hasPrefix("https://images.unsplash.com"), let response = response {
+                        if urlStr.contains("images.unsplash.com"), let response = response {
                             let cachedResponse = CachedURLResponse(response: response, data: data, storagePolicy: .allowed)
                             cache.storeCachedResponse(cachedResponse, for: request as URLRequest)
                         }
