@@ -19,5 +19,5 @@
 ### Реализовано:
 
 - iOS: 11+
-- API: [unsplash.com](https://unsplash.com/)
+- API: https://unsplash.com
 - Offline-mode: UserDefaults
